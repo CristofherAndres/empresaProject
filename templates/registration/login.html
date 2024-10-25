@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+
+{% block titulo %}
+    {{titulo}}
+{% endblock %}
+
+{% block contenido%}
+
+    <form method="post">
+
+        {% csrf_token %}
+        {{form}}
+
+        <button type="submit">Log in</button>
+
+    </form>
+
+{% endblock %}
